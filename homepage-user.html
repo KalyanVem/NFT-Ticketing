@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!--browser sync in the (parent cd eg:week3) 
+		browser-sync start --server --directory --files "**/*"-->
+	<meta charset="utf-8">
+
+	<!-- tells some ie to use latest rendering versions -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="viewport" content="width=device-width, initial=scaile=1">
+
+	<title>HomePage - User</title>
+
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- google fonts- oxygen -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+	<!-- google fonts- lora// for brand -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+	<style type="text/css">
+		/*map*/
+		#map {
+			top: 20;
+			/*height: 763px;*/
+			width: 100%;
+		}
+
+		/*Large device only*/
+		@media (min-width: 1200px) {
+			#map {
+				height: 675px;
+			}
+		}
+
+		/*medium device only*/
+		@media (min-width: 992px) and (max-width: 1199px) {
+			#map {
+				height: 560px;
+			}
+		}
+
+		/*small devices only*/
+		@media (min-width: 768px) and (max-width: 991px) {
+			#map {
+				height: 560px;
+			}
+		}
+
+		/*extra small devices only*/
+		@media (max-width: 767px) {
+			#map {
+				height: 560px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<nav id="header-nav" class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="index.html" class="pull-left visible-sm visible-md visible-lg">
+						<!-- <div id="logo-image" alt="Logo Image"></div> -->
+					</a>
+
+					<div class="navbar-brand">
+						<a href="index.html">
+							<h1>NFT-ticket</h1>
+						</a>
+
+					</div>
+
+
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+						data-target="#collapsable-nav" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div id="collapsable-nav" class="collapse navbar-collapse">
+					<!-- for items to float on right side=navbar-right -->
+					<ul id="nav-list" class="nav navbar-nav navbar-right">
+						<li>
+							<a href="homepage-user.html">
+								<span class="glyphicon glyphicon-home"></span><br class="hidden-xs">Home</a>
+						</li>
+						<li>
+							<!--br for next line-->
+							<a href="profile-user.html">
+								<span class="glyphicon glyphicon-user"></span><br class="hidden-xs">Profile</a>
+						</li>
+						<li>
+							<a href="ridehistory-user.html">
+								<span class="glyphicon glyphicon-th-list"></span><br class="hidden-xs">Order History</a>
+						</li>
+						<li>
+							<a href="ridehistory-user.html">
+								<span class="glyphicon glyphicon-bell"></span><br class="hidden-xs">Wishlist</a>
+						</li>
+						<li>
+							<button onclick="location.href='login-user.html' " class="">
+								<span class="glyphicon glyphicon-log-out"></span>
+								<br class="hidden-xs">Logout
+							</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+
+
+	<div class="container" id="main-content">
+		<div class="jumbotron">
+
+			<section class="row" id="grid">
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<a href="best-seller.html">
+						<div class="category-tile">
+							<img src="images/menu-categories/best-sellers.webp" alt="Best Sellers">
+							<p>Devcon</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<a href="veg_pizza.html">
+						<div class="category-tile">
+							<img src="images/menu-categories/veg-pizza.webp" alt="Veg Pizza">
+							<p>Cybercon</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<a href="#">
+						<div class="category-tile">
+							<img src="images/menu-categories/pasta-pizza-party.jpg" alt="Pasta Pizza Party">
+							<p>EDMFest</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<a href="#">
+						<div class="category-tile">
+							<img src="images/menu-categories/non-veg-pizza.webp" alt="Non-Veg Pizza">
+							<p>Esports</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<a href="#">
+						<div class="category-tile">
+							<img src="images/menu-categories/pizza-mania.webp" alt="Pizza Mania">
+							<p>VCT Challengers</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<a href="#">
+						<div class="category-tile">
+							<img src="images/menu-categories/special-chicken.webp" alt="Special Ckicken">
+							<p>Cultural & Heritage</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<a href="#">
+						<div class="category-tile">
+							<img src="images/menu-categories/sides.webp" alt="Sides">
+							<p>Iron Maiden</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<a href="#">
+						<div class="category-tile">
+							<img src="images/menu-categories/beverages.webp" alt="Beverages">
+							<p>Greenday</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<a href="#">
+						<div class="category-tile">
+							<img src="images/menu-categories/dessert.webp" alt="Dessert">
+							<p>Defcon</p>
+						</div>
+					</a>
+				</div>
+			</section>
+		</div>
+
+		<!-- home tiles -->
+		<div class="row" id="home-tiles">
+
+		</div><!-- End of home-tiles -->
+	</div> <!-- End of main-content -->
+
+	<footer class="panel-footer">
+		<div class="container">
+			<div class=" row">
+
+				<div class="text-center" id="copy-right">&copy; <a href=""></a>NFT-ticket
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	<!-- jQuery (Bootstrap JS plugins depend on it) -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+
+	<script
+		src="https://apis.mapmyindia.com/advancedmaps/v1/qgbssrzwvoopjslvm6fj8tcsm5dymfeo/map_load?v=1.5&plugin=cluster">
+		</script>
+</body>
+
+</html>
